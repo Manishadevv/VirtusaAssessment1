@@ -1,4 +1,4 @@
- ## Banking System Simulation
+ ## JAVA USE CASE - Banking System Simulation
 > A console-based Java application simulating core banking operations using Object-Oriented Programming concepts.
 
 
