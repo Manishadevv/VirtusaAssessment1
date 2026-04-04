@@ -87,7 +87,7 @@ Enter option: 5
 | **LocalDateTime** | Timestamps on every transaction |
 | **While Loop** | Menu keeps running until user exits |
 
-2. ## SQL USECASE
+ ## 2. SQL USECASE
 
  ## Hospital Management & Patient Analytics System
 
@@ -257,10 +257,119 @@ hospital-management-sql/
 | Diabetes     | 3           |
 
 
+# 3. PYTHON USECASE : CaseStudent Result Management System
 
+A desktop application built using Python and Tkinter that manages
+student academic records, calculates grades automatically, and
+generates performance reports.
+
+## Project Overview
+
+Educational institutions need efficient systems to manage student
+results and generate performance insights. This project provides a
+simple GUI-based application that allows staff to add, view, search,
+and delete student records while automatically computing grades,
+percentages, and results based on marks entered.
+
+## Tools and Technologies
+
+| Tool             | Purpose                          |
+|------------------|----------------------------------|
+| Python 3.x       | Core programming language        |
+| Tkinter          | GUI framework (built-in)         |
+| CSV Module       | Data storage and file handling   |
+| OS Module        | File existence check             |
+| Datetime Module  | Date display on dashboard        |
+
+
+## Features
+
+| Feature            | Description                                        |
+|--------------------|----------------------------------------------------|
+| Dashboard          | Shows total, passed, failed count and average score |
+| Add Student        | Form to enter student details with validation       |
+| View Students      | Displays all student records in a table             |
+| Search Student     | Search by name or roll number                       |
+| Delete Student     | Remove a student record by roll number              |
+| Report Card        | Individual student report with grade and result     |
+| Class Summary      | Overall class performance and grade distribution    |
+
+
+## Subjects Covered
+
+| Subject | Code |
+|---------|------|
+| Computer Networks        | CN   |
+| Object Oriented Programming | OOPS |
+| Data Structures and Algorithms | DSA  |
+| Database Management System | DBMS |
+| Operating Systems        | OS   |
+
+Each subject is marked out of 100. Total marks are out of 500.
+
+
+## Grading System
+
+| Percentage    | Grade         | Result |
+|---------------|---------------|--------|
+| 90 and above  | O (Outstanding) | Pass |
+| 80 to 89      | A+            | Pass   |
+| 70 to 79      | A             | Pass   |
+| 60 to 69      | B             | Pass   |
+| 50 to 59      | C             | Pass   |
+| Below 50      | F             | Fail   |
+
+A student also fails if any single subject mark is below 35,
+regardless of the total percentage.
+
+
+## Python Concepts Demonstrated
+
+| Concept              | Where It Is Used                              |
+|----------------------|-----------------------------------------------|
+| Class and Objects    | Student class with attributes and methods     |
+| Constructor (__init__) | Initializes student data automatically      |
+| Instance Methods     | calculate_grade(), calculate_result()         |
+| Functions            | save_student(), load_students(), delete_student() |
+| File Handling        | Reading and writing CSV files                 |
+| Exception Handling   | try-except blocks in file operations          |
+| Lists                | Storing loaded student records                |
+| Dictionary           | CSV rows read as key-value pairs              |
+| List Comprehension   | Filtering and searching student records       |
+| Conditional Statements | Grade and result logic                      |
+| Loops                | Processing student records                    |
+| String Methods       | strip(), lower() for input cleaning           |
+| Modules              | csv, os, tkinter, datetime                    |
+| GUI Programming      | Tkinter frames, labels, buttons, entry, treeview |
+| Input Validation     | Checking empty fields, duplicate roll numbers, mark ranges |
+
+
+## File Structure
+student_result_system/
+|
+|-- student_result.py       # Main application file
+|-- student_results.csv     # Auto-generated data storage file
+|-- README.md               # Project documentation
+
+
+## Input Validation Rules
+
+- All fields are required before saving
+- Roll number must be unique — duplicates are rejected
+- Marks must be numeric values only
+- Marks must be between 0 and 100
+
+## Sample Data
+
+| Roll No | Name    | CN | OOPS | DSA | DBMS | OS | Grade | Result |
+|---------|---------|----|------|-----|------|----|-------|--------|
+| 211478  | Manisha | 54 | 65   | 56  | 45   | 60 | C     | PASS   |
+| 211479  | Elava   | 67 | 45   | 87  | 40   | 97 | B     | PASS   |
+| 211481  | Siva    | 89 | 67   | 87  | 87   | 98 | A+    | PASS   |
 
 
 ##  Author
 
 - Name: Manisha Devi S
+- Virtusa Training (Group-1)
 - GitHub: @manishadevv
