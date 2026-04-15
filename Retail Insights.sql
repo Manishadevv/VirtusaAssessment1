@@ -27,7 +27,7 @@ INSERT INTO Categories (category_id, catergory_name) VALUES
 (5, 'Elecs');
 
 INSERT INTO Products (product_id, product_name, category_id, price, stock, expiry_date) VALUES 
-(1, 'Milk', 1, 3.50, 75, '2026-04-18'),    -- Task 2 Match (Expiring < 7 days, Stock > 50)
+(1, 'Milk', 1, 3.50, 75, '2026-04-18'),   
 (2, 'Curd', 1, 2.00, 120, '2026-04-21'),   
 (3, 'Chair', 2, 45.00, 10, '2029-12-31'),  
 (4, 'Table', 2, 150.00, 5, '2029-12-31'),   
